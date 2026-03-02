@@ -4,7 +4,7 @@ target/
 debug/
 
 # Cargo lock (giữ lại cho binary/application, xóa dòng này nếu là library)
-# Cargo.lock
+Cargo.lock
 
 # Backup files from rustfmt
 **/*.rs.bk
