@@ -38,4 +38,8 @@ fn main() {
 
     let carrots: ProteinGrams = 100.23;
     println!("carrots: {:?}", carrots);
+
+    let latte = "Latte";
+    let cappuccino = "Cappuccino";
+    println!("I like {1} and {2}", latte, cappuccino);
 }

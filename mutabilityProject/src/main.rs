@@ -1,55 +1,56 @@
-const MAX_POINTS: u32 = 100_000;
-const APPLE_PRICE: f64 = 1.0;
-const ORANGE_PRICE: f64 = 2.0;
+#[derive(Debug)]
+struct Fruit {
+    name: String,
+    price: u64,
+}
+
+impl Fruit {
+    fn new(name: String, price: u64) -> Fruit {
+        Fruit { name, price }
+    }
+
+    fn _get_name(&self) -> &String {
+        &self.name
+    }
+
+    fn _get_price(&self) -> u64 {
+        self.price
+    }
+
+    fn _set_name(&mut self, name: String) {
+        self.name = name;
+    }
+
+    fn _set_price(&mut self, price: u64) {
+        self.price = price;
+    }
+}
 
 fn main() {
-    let x = 10;
-    let y = &x;
-    println!("x: {}", x);
-    println!("y: {}", y);
+    let apples: Vec<u64> = vec![1, 2, 3, 4, 5];
+    let mut oranges: Vec<u64> = Vec::new();
+    oranges.push(6);
+    oranges.push(7);
+    oranges.push(8);
+    oranges.push(9);
+    oranges.push(10);
 
-    let mut full_name: String = String::from("John");
-    full_name.push_str(" Doe");
-    let full_name_length = full_name.len();
-    println!(
-        "full_name: {}, full_name_length: {}",
-        full_name, full_name_length
-    );
+    println!("apples: {:?}", apples);
+    println!("oranges: {:?}", oranges);
 
-    println!("MAX_POINTS: {}", MAX_POINTS);
-    println!("APPLE_PRICE: {}", APPLE_PRICE);
-    println!("ORANGE_PRICE: {}", ORANGE_PRICE);
+    let apples: u8 = 10;
+    let oranges: u8 = 10;
+    let fruits = apples + oranges;
+    println!("Data: {:?}", fruits);
 
-    let name: String = String::from("John");
-    let age: u32 = 20;
-    println!("name: {}, age: {}", name, age);
+    let mut apple: Fruit = Fruit::new(String::from("Apple"), 10);
+    println!("apple: {:?}", apple);
+    dbg!(apple);
 
-    let var: u64 = 10;
-    let _var = var + 1;
-    let var: String = String::from("Hello");
-    println!("var: {}", var);
+    let _unuse_apple: Fruit = Fruit::new(String::from("Apple"), 10);
 
-    let new_number: u64 = get_number();
-    println!("new_number: {}", new_number);
-
-    {
-        let x1 = 5;
-        println!("x: {}", x1);
-    }
-
-    {
-        type MyType = u64;
-        let y: MyType = 10;
-        println!("y: {}", y);
-    }
-
-    print_function();
-}
-
-pub fn get_number() -> u64 {
-    10
-}
-
-pub fn print_function() {
-    println!("print_function");
+    let mut hym_reps: &u32 = &10;
+    println!("hym_reps: {:?}", hym_reps);
+    hym_reps = &11;
+    println!("hym_reps: {:?}", hym_reps);
 }

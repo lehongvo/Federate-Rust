@@ -61,6 +61,15 @@ fn main() {
     let favorite_beverage: &str = "Coffee";
     println!("favorite_beverage: {:?}", favorite_beverage);
 
+    #[allow(unused_variables)]
     let _favorite_beverage: &str = "Tea";
     println!("favorite_beverage: {:?}", favorite_beverage);
+
+    let latte = "Latte";
+    let cappuccino = "Cappuccino";
+    println!("I like {0} and {1}", latte, cappuccino);
+
+    let city = "New York";
+    println!("I live in {city}");
+    city = "Los Angeles";
 }
