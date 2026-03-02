@@ -1,0 +1,8 @@
+[package]
+name = "mutabilityProject"
+version = "0.1.1"
+edition = "2024"
+description = "A simple mutability project example crate."
+license = "MIT"
+
+[dependencies]
