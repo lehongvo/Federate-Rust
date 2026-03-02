@@ -69,7 +69,7 @@ fn main() {
     let cappuccino = "Cappuccino";
     println!("I like {0} and {1}", latte, cappuccino);
 
-    let city = "New York";
+    let mut city = "New York";
     println!("I live in {city}");
     city = "Los Angeles";
 }
