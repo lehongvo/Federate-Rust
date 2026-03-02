@@ -27,7 +27,6 @@ lcov.info
 
 # IDE & editors
 .idea/
-.vscode/
 *.swp
 *.swo
 *~

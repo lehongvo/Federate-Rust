@@ -1,0 +1,27 @@
+{
+  "window.zoomLevel": 0.3,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 24,
+  "editor.fontFamily": "'Iosevka', 'Cascadia Code', 'Victor Mono', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, 'Liberation Mono', monospace",
+  "editor.letterSpacing": 0.2,
+  "editor.fontLigatures": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.inlayHints.fontSize": 15,
+  "terminal.integrated.fontSize": 15,
+  "workbench.colorCustomizations": {
+    "editor.background": "#0f111a"
+  },
+  "workbench.tree.indent": 16,
+  "editor.formatOnSave": true,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "rust-analyzer.checkOnSave": true,
+  "rust-analyzer.check.command": "check",
+  "rust-analyzer.cargo.buildScripts.enable": true,
+  "rust-analyzer.procMacro.enable": true,
+  "rust-analyzer.diagnostics.enable": true,
+  "rust-analyzer.inlayHints.typeHints.enable": true,
+  "rust-analyzer.inlayHints.parameterHints.enable": true,
+  "rust-analyzer.inlayHints.chainingHints.enable": true
+}
